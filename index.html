@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customer Feedback Form</title>
+</head>
+<body>
+	<div class="container" id="myForm" style="margin: auto;width: 50%;background-color: #e6faff;padding: 30px;">
+		<h1 style="text-align: center;">Tour Evalution Form</h1><br><br>
+		<form style="text-align: left;" action="/action_page.php" method="get">
+			<label for="fname">Name:</label>
+  			<input type="text" id="fname" name="fname" style="width: 450px;" placeholder="Full Name"required><br><br><br>
+  			<label for="gname">Group Name:</label>
+  			<input type="text" id="gname" name="gname" style="width: 350px;" placeholder="Group Name" required><br><br><br>
+  			<label for="img">Group Photo:</label>
+   			<input type="file" id="img" name="img" accept="image/*"><br><br><br>
+   			<label for="idproof">ID proof:</label>
+   			<input type="file" id="idproof" name="idproof" accept=".pdf"><br><br><br>
+   			<label for="que">What do you feel should be added to the tour to improve it?</label><br><br>
+			<textarea id="que" name="que" rows="5" cols="80" placeholder="feedback.." maxlength="100"></textarea><br><br><br>
+			<label for="que">What was the best part of your tour/visit?</label><br><br>
+			<textarea id="que" name="que" rows="5" cols="80" placeholder="feedback.." maxlength="100"></textarea><br><br><br>
+			<div style="text-align: center;">
+				<button onclick="submitClick()" style="padding:10px;margin-right:  20px;">Submit</button>
+				<button onclick="myFunction()" style="padding:10px;">Reset</button><br><br><br>
+				<h2 style="text-align: center;">Know more about Us!</h2>
+				<button style="border-radius: 5px;"><img src="buttonImg.png"></button>
+			</div>
+			
+
+		</form>
+	</div>
+	<script type="text/javascript">
+		function submitClick( ) 
+		{
+			alert("Thank you for your time! Your details have been submitted!");
+		}
+		function myFunction() 
+		{
+  			document.getElementById("myForm").reset();
+		}
+	</script>
+</body>
+</html>
