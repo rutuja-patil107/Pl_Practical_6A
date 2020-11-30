@@ -1,0 +1,10 @@
+.container{
+    margin: auto;
+    width: 50%;
+    background-color: #e6faff;
+    padding: 30px;
+    border: 1px solid black;
+    border-width: thin;
+    font-size: 15px;
+    font-style: normal;
+}
